@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Stupid Coach</h1>
+  <blockquote>
+    <p><%= @question %></p>
+    <footer>
+      <cite>
+        <p>&mdash;You</p>
+      </cite>
+    </footer>
+  </blockquote>
+  <blockquote class="answer">
+    <p><%= @answer %></p>
+    <footer>
+      <cite>
+        <p>&mdash;Coach</p>
+      </cite>
+    </footer>
+  </blockquote>
+  <%= link_to "Ask another question", ask_path %>
+</div>

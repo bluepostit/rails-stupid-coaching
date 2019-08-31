@@ -1,0 +1,33 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$gray: #dddddd;
+$highlight-yellow: #fffee1;
+
+body {
+  font-family: arial, 'sans-serif';
+}
+
+blockquote {
+  position: relative;
+  padding: 1em;
+
+  &:before {
+    content: " ";
+    background-color: $gray;
+    position: absolute;
+    height: 100%;
+    width: 0.5em;
+    left: 0;
+    top: 0;
+  }
+}
+
+blockquote.answer {
+  background-color: $highlight-yellow;
+}
+
+.container {
+  margin: 0 auto;
+  width: 700px;
+}
